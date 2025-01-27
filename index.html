@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo (2).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li> <!-- Fixed ID -->
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Driven Professional</p>
+            <h1>Hi, I'm <span>Arpit</span><br>Singh From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/20180222-DSC_0078.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+               <p> Hello! I'm Arpit Singh, a Data Science and Business Analytics enthusiast with a background in Computer Engineering and 3 years of experience in Financial and Medical Underwriting. Currently, I’m expanding my expertise in Data Science, Machine Learning, and Business Analytics, with a focus on transforming data into actionable insights for strategic decision-making.</p><br>
+
+               <p> Key Strengths:</p><br>
+                
+               <p> 1. Expertise in statistical analysis, data visualization, machine learning, and predictive modeling.</p><br>
+                <p> 2. Proficient in Python, Power BI, SQL, Tableau, MLOps, R, and Excel.</p><br>
+                <p> 3. Experience in cross-functional collaboration to implement data-driven strategies.</p><br>
+                <p> 4. In my free time, I explore advancements in AI, Big Data, and Business Intelligence, while honing my skills in creative data storytelling to make insights impactful.</p><br>
+                
+            <p>Let’s connect and explore how data can drive business growth!</p><br>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Data Analysis & Visualization</span><br>Exploratory Data Analysis (EDA), Data Cleaning & Preprocessing, Business Intelligence (Power BI, Excel), Data Storytelling</li>
+                        
+                        <li><span>Statistical Analysis</span><br>Hypothesis Testing, Probability & Probability Distributions, ANOVA, Regression Analysis</li>
+                        
+                        <li><span>Machine Learning</span><br>Supervised & Unsupervised Learning, Model Evaluation & Optimization, Feature Engineering, Classification & Clustering Techniques</li>
+                        
+                        <li><span>Programming & Tools</span><br>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn), R Programming (Tidyverse, ggplot2, caret), SQL (Database Management, Query Optimization), Excel (Pivot Tables, Data Analysis), Power BI (Dashboard Creation, Report Automation)</li>
+                        
+                        <li><span>MLOps</span><br>Model Deployment (Flask, FastAPI), CI/CD Pipelines, Model Monitoring & Maintenance, Cloud Platforms (AWS, GCP, Azure)</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2022 - 2024</span><br>Executive at Datamatics Global Services Limited</li>
+                        <li><span>2022 - 2022</span><br>Sales Associate at Shriz International.</li>
+                        <li><span>2021 - 2022</span><br>Customer Service Associate at Ovians Global Solutions Pvt Ltd.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2016</span><br>B.E (Computer Engineering) from K.K Wagh Institute of Enginerring Education and Reasearch</li>
+                        <li><span>2016</span><br>HSC from K.R.T Arts, B.H Commerce & A.M Science College.</li>
+                        <li><span>2014</span><br>SSC from Saint Francis High School.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------certification---------------- -->
+<div id="certifications"> <!-- Fixed ID -->
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-PGPDSBA"></i>
+                <h2>Post Graduate Program in Data Science in Business Analytics (Pursuing)</h2>
+                <p>Pursuing the program and gaining expertise in Python, Machine Learning, and Business Analytics. Developed hands-on skills through real-world projects and industry-relevant case studies.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-Power BI"></i>
+                <h2>Microsoft Power BI Data Analyst</h2>
+                <p>Earned the Microsoft Power BI Data Analyst certification, demonstrating proficiency in Power BI, DAX, Power Query, and data visualization. Gained hands-on experience in data analysis, reporting, and business intelligence solutions.</p>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/PIYUHZC995BJ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank">View Certification</a>
+            </div>
+            <div>
+                <i class="fas fa-R Programming"></i>
+                <h2>Data Science and Machine Learning Bootcamp with R</h2>
+                <p>Earned the Data Science and Machine Learning Bootcamp with R certification from Udemy, gaining expertise in data science concepts, machine learning algorithms, and R programming. Developed hands-on skills in data manipulation, visualization, and predictive modeling.</p>
+                <a href="https://www.udemy.com/certificate/UC-1259dbfc-c13d-4536-9768-04a3aab58b33/" target="_blank">View Certification</a>
+            </div>
+            <div>
+                <i class="fas fa-SQL"></i>
+                <h2>Complete SQL and Databases Bootcamp</h2>
+                <p>Earned the Complete SQL and Databases Bootcamp certification from Udemy, mastering SQL fundamentals, database management, and query optimization. Gained hands-on experience in database design, data manipulation, and understanding the software development life cycle (SDLC).</p>
+                <a href="https://www.udemy.com/certificate/UC-8162eec8-dd3e-4462-bd3b-80b19efbd302/" target="_blank">View Certification</a>
+            </div>
+            <div>
+                <i class="fas fa-MLOPS"></i>
+                <h2>2025 Deploy ML Model in Production with FastAPI and Docker </h2>
+                <p>Earned the Deploy ML Model in Production with FastAPI and Docker certification from Udemy, gaining expertise in deploying machine learning models using FastAPI, Docker, and AWS services. Learned key MLOps concepts, including containerization, cloud deployment, and API integration for scalable production solutions.</p>
+                <a href="https://www.udemy.com/certificate/UC-82ab2514-0296-4805-84cf-0957546e31a3/" target="_blank">View Certification</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Project1.jpg">
+                <div class="layer">
+                    <h3>Austo Motor Company</h3>
+                    Conducting exploratory data analysis to identify key variables driving car sales for AUSTO, uncovering patterns, detecting anomalies, and creating customer profiles to extract actionable insights for improving sustainability in the US automobile market.</p>
+                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PDS_project_final_submission.ipynb" target="_blank">Project Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project_2.avif">
+                <div class="layer">
+                    <h3>Inferential Statistics Project</h3>
+                    The Inferential Statistics Project analyzes three industry problems: stone suitability for printing, fitness program effectiveness, and the impact of dental implant methods on metal hardness. The findings support data-driven decisions and operational improvements for the companies involved.</p>
+                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/IS%20Project%20Final%20Submission-%202.ipynb" target="_blank">Project Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project_3.jpg">
+                <div class="layer">
+                    <h3>OTT Data Analysis</h3>
+                    This project analyzes content data to develop a linear regression model predicting first-day viewership on ShowTime's OTT platform. By identifying key driver variables, we aim to optimize scheduling, marketing, and platform features to boost viewership and user engagement.</p>
+                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/PM%20Project%20Source%20Code%20Final%20Submission.ipynb" target="_blank">Project Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project_4.png">
+                <div class="layer">
+                    <h3>INN Hotels - Booking Cancellation Prediction</h3>
+                    This project develops machine learning models to predict booking cancellations for INN Hotels Group. By analyzing booking data and identifying key factors, we aim to optimize cancellation policies, reduce revenue loss, and improve hotel operations.</p>
+                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project_5.jpg">
+                <div class="layer">
+                    <h3>EasyVisa Application</h3>
+                    Analyze Visa applicant data to build a predictive model that recommends suitable profiles for approval or denial based on key influencing factors.</p>
+                    <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Machine%20Learning%201%20Project%20Submission.ipynb" target="_blank">Project Link</a>                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Project_6.png">
+                <div class="layer">
+                    <h3>AllLife Bank</h3>
+                    This project segments AllLife Bank’s credit card customers based on spending patterns and past interactions using clustering algorithms. By identifying distinct segments, we’ll provide tailored recommendations to optimize marketing, service delivery, customer acquisition, and retention, driving business growth.</p>
+                        <a href="https://github.com/arpitsingh4297/Data-Science-and-Business-Analytics-Projects/blob/main/Unsupervised%20Learning%20Project%20Code%20Submission.ipynb" target="_blank">Project Link</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Email- arpitsingh4297@outlook.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>Phone Number- 9975556702 / 9370201547 </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100014442824564" target="_blank">
+                        <img src="images/facebook-icon.png" alt="Facebook" style="width: 40px; height: 40px;">
+                    </a>
+                    <a href="https://www.instagram.com/_iam_arpitsingh_/?hl=en" target="_blank">
+                        <img src="images/instagram-icon.jpg" alt="Instagram" style="width: 40px; height: 40px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/arpitsingh04" target="_blank">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
+                <a href="images/ArpitSinghResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 @ Arpit Arjun Singh. All Rights Reserved.</p>
+    </div>  
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRfQOCPCj6Zyz7ykqNaPlMVnEGFJSh8cVunBqiDgU4bZJXRF2vqQYnqMnMMQQtwIOWWw/exec' // Your Google Apps Script URL
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
